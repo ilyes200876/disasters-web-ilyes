@@ -1,23 +1,23 @@
-:root {
+/* :root {
   --h: 0;
   --s: 65%;
   --l: 55%;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "FatFont";
   src: local("Arial");
   font-weight: 400;
   font-style: normal;
-}
+} */
 
-@keyframes spin {
+/* @keyframes spin {
   0%   { transform: rotate(0deg) scale(1); }
   25%  { transform: rotate(90deg) scale(1.1); }
   50%  { transform: rotate(180deg) scale(0.9); }
   75%  { transform: rotate(270deg) scale(1.15); }
   100% { transform: rotate(360deg) scale(1); }
-}
+} */
 
 html, body, * {
   box-sizing: border-box;
@@ -34,16 +34,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.container-fat {
+/* .container-fat {
   max-width: 2560px;
   margin: 0 auto;
   padding: 8rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 8rem;
-}
+} */
 
-.loader-fat {
+/* .loader-fat {
   width: 256px;
   height: 256px;
   border-radius: 50%;
@@ -51,7 +51,7 @@ body {
   border-top-color: hsl(var(--h), var(--s), var(--l));
   animation: spin 3s linear infinite;
   mix-blend-mode: overlay;
-}
+} */
 
 .bg-1 { background-color: hsl(0, 65%, 30%); color: #fff; text-shadow: 0 1px 2px #000; }
 .bg-2 { background-color: hsl(2, 65%, 30%); color: #fff; text-shadow: 0 1px 2px #000; }
@@ -91,21 +91,21 @@ body {
 .p-fat-3  { padding:  8rem; }
 .p-fat-4  { padding: 10rem; }
 .p-fat-5  { padding: 12rem; }
-.m-fat-1  { margin:  4rem; }
+/* .m-fat-1  { margin:  4rem; }
 .m-fat-2  { margin:  6rem; }
 .m-fat-3  { margin:  8rem; }
 .m-fat-4  { margin: 10rem; }
-.m-fat-5  { margin: 12rem; }
+.m-fat-5  { margin: 12rem; } */
 
-.text-xxl   { font-size: 8rem; }
+/* .text-xxl   { font-size: 8rem; }
 .text-xxxl  { font-size: 12rem; }
-.text-xxxxl { font-size: 16rem; }
+.text-xxxxl { font-size: 16rem; } */
 
-.blur-fat {
+/* .blur-fat {
   filter: blur(24px) saturate(200%) brightness(150%);
-}
+} */
 
-.grain-fat::after {
+/* .grain-fat::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -115,4 +115,4 @@ body {
   opacity: .15;
   will-change: transform;
   animation: spin 120s linear infinite;
-}
+} */

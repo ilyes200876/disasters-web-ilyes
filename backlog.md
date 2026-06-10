@@ -41,6 +41,16 @@
 - 🛠️ KPI : score accessibilité Lighthouse > 90
 - 📅 Tag roadmap : M4
 
-...
+---
+
+### Story 4 : Netoyage du CSS/JS
+
+**En tant que** développeur,  
+**je veux** enlever le css/js en trop
+**afin de** pouvoir fluidifier l'expérience utiliser.
+
+
+
+
 
 ---

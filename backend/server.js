@@ -9,19 +9,19 @@ import { fileURLToPath } from 'url'
 const app = express()
 const PORT = process.env.PORT || 5001
 
-// --- RPS Middleware (doit être AVANT routes/static) ---
-const rpsWindow = new Array(10).fill(0) // 10 "tranches" de 100ms = 1s
-let rpsIndex = 0
+// // --- RPS Middleware (doit être AVANT routes/static) ---
+// const rpsWindow = new Array(10).fill(0) // 10 "tranches" de 100ms = 1s
+// let rpsIndex = 0
 
-setInterval(() => {
-  rpsIndex = (rpsIndex + 1) % rpsWindow.length
-  rpsWindow[rpsIndex] = 0
-}, 100)
+// setInterval(() => {
+//   rpsIndex = (rpsIndex + 1) % rpsWindow.length
+//   rpsWindow[rpsIndex] = 0
+// }, 100)
 
-app.use((req, res, next) => {
-  rpsWindow[rpsIndex]++
-  next()
-})
+// app.use((req, res, next) => {
+//   rpsWindow[rpsIndex]++
+//   next()
+// })
 
 app.use((_, res, next) => {
   res.set('Timing-Allow-Origin', '*')
@@ -63,10 +63,10 @@ app.get('/api/server', (_, res) => {
 })
 
 // --- API payload ---
-app.get('/api/payload', (_, res) => {
-  const block = 'x'.repeat(1_024)
-  const big = Array(1_024).fill(block)
-  res.json({ data: big, ts: Date.now() })
-})
+// app.get('/api/payload', (_, res) => {
+//   const block = 'x'.repeat(1_024)
+//   const big = Array(1_024).fill(block)
+//   res.json({ data: big, ts: Date.now() })
+// })
 
 app.listen(PORT, () => console.log(`backend on :${PORT}`))

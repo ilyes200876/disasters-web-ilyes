@@ -191,7 +191,7 @@ export default function App() {
     }
 
     // Ajout du rafraîchissement périodique
-    const interval = setInterval(computeStats, 2000);
+    const interval = setInterval(computeStats, 30000);
 
     return () => clearInterval(interval);
   }, []);
